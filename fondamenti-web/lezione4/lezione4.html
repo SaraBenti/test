@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 4</title>
+</head>
+
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/89zey3EB5H4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <h1>Form</h1>
+    <form action="inviaDati.php" method="GET" name="contatti">
+        <h2>contatta l'azienda</h2>
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+
+            <label for="nominativo">Nominativo</label>
+            <input type="text" name="nominativo" id="nominativo" tabindex="2" autocomplete="off" > <!--id deve essere uguale a for--> 
+            <!--autocomplete off non dà l'autocompletamento automatico-->
+            <label for="mail">E-mail</label>
+            <input type="text" name="email" id="mail" tabindex="1" required multiple> <!--il tabindex stabilisce l'ordine con il qulae viene fatto il comando tab--> 
+            <!--required quell'elemento è obbligatorio-->
+            <!--multiple dà la possibilità in questo caso di mettere più mail-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Dati di residenza</legend>
+
+            <label for="indirizzo">Indirizzo</label>
+            <input type="text" name="indirizzo" id="indirizzo" autofocus> <!--id deve essere uguale a for--> 
+            <!--autofocus mette il fuoco su indirizzo e quindi il cursore parte di lì-->
+            <label for="localita">Località</label>
+            <input type="text" name="localita" id="localita">
+            <label for="provincia">Provincia</label>
+            <input type="text" name="provincia" id="provincia">
+        </fieldset>
+        <fieldset>
+            <legend>Dati di accesso</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="inserisci username" value="utente1" disabled> <!--il tag disabled disabilita il campo-->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+        <div>
+            <label for="messaggio">Messaggio</label>
+            <textarea name="messaggio" id="messaggio" cols="10" rows="10"></textarea>
+        </div>
+        <section id="hobbies">
+            <h2>sport preferiti</h2>
+            <label for="calcio">calcio</label>
+            <input type="checkbox" name="calcio" id="calcio">
+            <label for="basket">basket</label>
+            <input type="checkbox" name="basket" id="basket">
+            <label for="pallavolo">pallavolo</label>
+            <input type="checkbox" name="pallavolo" id="pallavolo">
+            <!--vengono visualizzati solo quelli cliccati-->
+        </section>
+        <section>
+            <h2>Forma sociale dell'azienda</h2>
+            <label for="spa">spa</label>
+            <input type="radio" name="forma-sociale" id="spa" value="1"> 
+            <label for="srl">srl</label>
+            <input type="radio" name="forma-sociale" id="srl" value="2" checked> 
+            <label for="snc">snc</label>
+            <input type="radio" name="forma-sociale" id="srl" value="3"> 
+            <!-- -name nel radio deve essere uguale per tutti gli elementi cliccabili ed è quello che passa al php
+                 -for= è cliccabile sia il pallino che il nome
+                -value= quando seleziono quell'opzione sull'arra mi indica questo valore-->
+
+            <!--si può assegnare un prefisso ai name a seconda del tipo di button-->
+            <!-- tipologie di annotazioni
+               1. Camel case: chkTennis, txtRagioneSociale
+                2. Pascal case: (usata di solito negli oggetti) Gatto, AziendaEstera
+               3. Snake case: chk_tennis
+               4. Kebab case: chk-tennis
+               nell'array mi indica di cosa si tratta e quindi può essere comodo
+               chk but rad txt pwd...-->
+
+               <section id="dati-nascita">
+                <h2>Estremi certificato di nascita</h2>
+                <label for="comune-nascita">Comune di nascita</label>
+                <select name="comune-nascita" id="comune nascita">
+                    
+                <optgroup label="Emilia Romagna">
+                    <option value="Rimini">Rimini</option>
+                    <option value="Forli">Forli</option>
+                    <option value="Cesena">Cesena</option>
+                </optgroup>
+                <optgroup label="Marche">
+                    <option value="Pesaro">Pesaro</option>
+                </optgroup>    
+                </select>
+
+               </section>
+        </section>
+        <fieldset>
+            <legend>Altri campi</legend>
+            <label for="curriculum">Curriculum vitae</label>
+            <input type="file" name="Currirculum" id="Curriculum">
+            <input type="hidden" name="id-utente" value="10"> <!-- input hidden è un campo nascosto -->
+            <label for="colore-preferito">Colore preferito</label>
+            <input type="color" name="colore-preferito" id="colore preferito">
+            <label for="mese preferito">Mese preferito</label>
+            <input type="month" name="mese-preferito" id="mese-preferito">
+            <label for="esprimi-giudizio">Esprimi un giudizio</label>
+            <input type="number" name="giudizio" id="giudizio" min="1" max="10">
+        </fieldset>
+
+        <input type="submit" value="Richiedi informazioni">
+        <input type="reset" value="Annulla form">
+        <button type="submit">Richiedi informazioni 2</button>
+        <button type="reset">Annulla form 2</button>
+        <!--input submit e button submit sono la stessa cosa-->
+        <button id="calcola-cf" type="button">Calcola codice fiscale</button>
+        <!--il button non è solo submit,per essere solo button inserire type"button" per indicare appunto che è un bottone generico-->
+
+    </form>
+
+</body>
+
+</html>
