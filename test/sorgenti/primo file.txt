@@ -1,0 +1,8 @@
+
+funzione somma(numero1, numero2)
+    //calcolo risultato            //=commento
+    risultato=numero1 + numero2    pseudocodice
+
+   //restituisco il risultato       //commento
+    restituisci il risultato       pseudocodice
+fine
