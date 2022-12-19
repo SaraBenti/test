@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Lezione 5></title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="inviaDati.php" method="GET">
+     
+        <fieldset>
+            <legend>Dati di contatto</legend>
+            <label for="txtCognome">Cognome</label> <!--txt non è obbligatorio-->
+            <input type="text" name="txtCognome" id="txtCognome" value="Verdi"> 
+            <!--value mi ripropone il dato che metto all'interno; altrimenti placeholder mi da il suggerimento, ad esempio 'inserisci il nome'-->
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required> <!--required indica l'obbligatorietà del campo-->
+            <label for="txtCodiceFiscale">Codice Fiscale</label>
+            <input type="text" name="txtCodiceFiscale" id="txtCodiceFiscale" pattern="[A-Z]{6}[\d]{2}[A-M][\d]{2}[A-Z0-9]{4}[A-Z]"> 
+            <!--pattern sono le espressioni regolari da ricercare su regex101.com-->
+            <label for="txtTelefono">Telefono</label>
+            <input type="tel" name="txtTelefono" id="txtTelefono">
+            <!--cambia latastiera sul telefono mentre da pc non mi dà differenze-->
+            <label for="dataIscrizione" hidden></label>>Data Iscrizione</label>
+            <input type="date" name="dataIscrizione" id="dataIscrizione" hidden>
+            <label for="rngGiudizio">Lascia il tuo voto</label>
+            <input type="range" name="rngGiudizio" id="rngGiudizio">
+            <label for="mdrPreferito" contenteditable="true">Scegli motore di ricerca</label> <!--contenteditable consente di andare a scrivere direttamente nel browser-->
+            <input list="mdrPreferito"> <!--mdr sta per motore di ricerca-->
+            <datalist id="mdrPreferito">
+                <option value="google">google</option>
+                <option value="bing">bing</option>
+                <option value="yahoo">yahoo</option>
+                <option value="yandex">yandex</option>
+                
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Titolo di studio</legend>
+            <input type="radio" name="radTitoloDiStudio" id="licenzaMedia">
+            <label for="licenzaMedia">Licenza Media</label>
+            <input type="radio" name="" id="">     <input type="radio" name="radTitoloDiStudio" id="diplomaMaturita">
+            <label for="diplomaMaturita">Diploma di Maturità</label>
+            <input type="radio" name="radTitoloDiStudio" id="laureaTriennale">
+            <label for="laureaTriennale">Laurea Triennale</label>
+            <input type="radio" name="radTitoloDiStudio" id="diplomaIts">
+            <label for="diplomaIts">Diploma Its</label>
+            <input type="radio" name="radTitoloDiStudio" id="laureaMagistrale">
+            <label for="laureaMagistrale">Laurea Magistrale</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dati di residenza</legend>
+            <label for="txtCap">Cap</label>
+            <input type="text" name="txtCap" id="txtCap" pattern="[\d]{5}"> <!--indica quanti numeri di cap servono affinchè non dia errori-->
+            <label for="numEta">Età</label>
+            <input type="number" name="numEta" id="numEta" min="18" max="99" step="1"> <!--step è l'incremento dei numeri, si può crescere o diminuire di un numero-->
+        </fieldset>
+        <textarea name="commento" id="commento" cols="90" rows="5">consegnare al 2 piano</textarea> 
+        <!--essendo textaerea autochiudente non si mette il value ma si segna tra inizio e fine tag-->
+        <section id="pulsanti">
+        <button type="submit">Invia Dati</button>
+        <input type="reset" value="Reimposta dati">
+         </section>
+    </form>
+</body>
+</html>
