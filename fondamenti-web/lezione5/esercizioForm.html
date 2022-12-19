@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Form</title>
+</head>
+<body>
+    <h1>CONTATTACI</h1> 
+    <form action="inviaDati.php" method="GET" name="contatti">
+        <div>
+            <label for="txtNome">NOME*</label>
+            <input type="text" name="txtNome" id="txtNome" placeholder="Nome">
+            <label for="txtCognome">COGNOME*</label>
+            <input type="text" name="txtCognome" id="txtCognome" placeholder="Cognome">
+        </div>
+        <div>
+            <label for="email">EMAIL*</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label for="tel">TELEFONO*</label>
+            <input type="tel" name="tel" id="tel" placeholder="Telefono">
+        </div>
+        <div>
+            <label for="dateArrivo">ARRIVO*</label>
+            <input type="date" name="dateArrivo" id="dateArrivo" placeholder="Arrivo">
+            <label for="datePartenza">PARTENZA*</label>
+            <input type="date" name="datePartenza" id="datePartenza" placeholder="Partenza">
+        </div>
+        <div>
+            <label for="numeroAdulti">ADULTI*</label>
+            <input type="number" name="numeroAdulti" id="numeroAdulti" min="1" max="4" step="1">
+            <label for="numeroBambini">BAMBINI*</label>
+            <input type="number" name="numeroBambini" id="numeroBambini" min="1" max="3" step="1">
+        </div>
+        <div>
+            <label for="selezionaTrattamento">TRATTAMENTO</label>
+            <select name="selezionaTrattamento" id="selezionaTrattamento">
+                <option value="solo pernottamento">solo pernottamento</option>
+                <option value="camera e colazione">camera e colazione</option>
+            </select>
+            <label for="sistemazione">SISTEMAZIONE</label>
+            <select name="sistemazione" id="sistemazione">
+                <option value="cameraSingola">Camera singola</option>
+                <option value="cameraDoppia">Camera doppia</option>
+                <option value="cameraMatrimoniale">Camera matrimoniale</option>
+                <option value="cameraMatr+1">Camera matrimoniale + 1 letto</option>
+                <option value="cameraMatr+castello">Camera Matrimoniale + castello</option>
+                <option value="cameraMatr+2Family">Camera Matrimoniale + 2 Family</option>
+            </select>   
+        </div>
+        <div>
+            <label for="messaggio">MESSAGGIO*</label>
+            <textarea name="messaggio" id="messaggio" placeholder="Messaggio"></textarea>
+        </div>
+            <input type="checkbox" name="privacy" id="privacy">
+        
+            <label for="privacy">Acconsento al trattamento dei dati</label>
+        <button type="richiediPreventivo">Richiedi preventivo</button>
+    </form>
+
+</body>
+</html>
