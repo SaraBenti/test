@@ -1,5 +1,5 @@
 
-funzione somma(numero1, numero2)
+funzione somma(numero1, numero2) //fa parte della firma
     //calcolo risultato            //=commento
     risultato=numero1 + numero2    pseudocodice
 
@@ -36,3 +36,20 @@ funzione controllo (numero1, numero2)
     //restituisco il risultato
     restituisci il risultato
 fine
+
+
+funzione negativi(numero1, numero2)
+//verifico se entrambi i valori sono positivi
+se numero1>0 e numero2>0
+allora
+    risultato =0
+altrimenti
+    //verifico se entrambi i valori sono negativi
+    se numero1<0 e numero2<0
+allora 
+    risultato=2
+altrimenti
+    risultato=1
+    fine se
+fine se
+
