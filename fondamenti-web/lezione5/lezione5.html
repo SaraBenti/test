@@ -10,9 +10,12 @@
     <h1>Form</h1>
     <form action="inviaDati.php" method="GET">
      
-        <fieldset>
-            <legend>Dati di contatto</legend>
+        <fieldset> <!--fieldset consente di raggruppare dei campi ed è facoltativo-->
+            <legend>Dati di contatto</legend> <!--legend mette la caption-->
             <label for="txtCognome">Cognome</label> <!--txt non è obbligatorio-->
+            <!--label mette un'etichetta sopra il campo → attributo for contiene l'id dell'elemento a cui fa riferimento la label
+            l'attributo for è importante per fare collegamento del nome e quello da inserire (se clicco su nominativo mi dà 
+            la possibilità di inserirlo nel box; se tolgo for devo andare ad inserirlo direttamente nel box)-->
             <input type="text" name="txtCognome" id="txtCognome" value="Verdi"> 
             <!--value mi ripropone il dato che metto all'interno; altrimenti placeholder mi da il suggerimento, ad esempio
                  'inserisci il nome'-->
@@ -31,7 +34,7 @@
             <label for="mdrPreferito" contenteditable="true">Scegli motore di ricerca</label> <!--contenteditable consente
                  di andare a scrivere direttamente nel browser-->
             <input list="mdrPreferito"> <!--mdr sta per motore di ricerca-->
-            <datalist id="mdrPreferito">
+            <datalist id="mdrPreferito"> <!--datalist per molti termini, rispetto a select che si usa per pochi termini-->
                 <option value="google">google</option>
                 <option value="bing">bing</option>
                 <option value="yahoo">yahoo</option>
@@ -41,7 +44,8 @@
         </fieldset>
         <fieldset>
             <legend>Titolo di studio</legend>
-            <input type="radio" name="radTitoloDiStudio" id="licenzaMedia">
+            <input type="radio" name="radTitoloDiStudio" id="licenzaMedia"> <!--input type radio una scelta possibile; checkbox una
+            o più scelte-->
             <label for="licenzaMedia">Licenza Media</label>
             <input type="radio" name="" id="">     <input type="radio" name="radTitoloDiStudio" id="diplomaMaturita">
             <label for="diplomaMaturita">Diploma di Maturità</label>
@@ -62,7 +66,8 @@
         <textarea name="commento" id="commento" cols="90" rows="5">consegnare al 2 piano</textarea> 
         <!--essendo textaerea autochiudente non si mette il value ma si segna tra inizio e fine tag-->
         <section id="pulsanti">
-        <button type="submit">Invia Dati</button>
+        <button type="submit">Invia Dati</button> <!--input type submit e button type submit sono la stessa cosa; il vantaggio di button
+        è di avere altri comandi generici; un button non è solo submit-->
         <input type="reset" value="Reimposta dati">
          </section>
     </form>
