@@ -3,20 +3,23 @@
 
 <head> <!--tutto quello che serve per vedere il body, questo tag non è visibile nella pagina-->
     <meta charset="UTF8"> <!--charset per la combinazione di caratteri-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="introduzione all'HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport per rendere responsive la pagina; seguono
+         le misure del device come partenza-->
+    <meta name="description" content="introduzione all'HTML5"> <!--per la serp-->
     <meta name="author" content="Sara">
     <link rel="icon" href="favicon.png">
-<!--meta non è autochiudente, contiene informazioni che vogliamo dare nella pagina -->
+<!--meta è autochiudente, contiene informazioni che vogliamo dare nella pagina -->
 
     <title>Lezione 1 HTML5</title> <!--da il nome nella tab-->
-</head>
+</head> <!--contiene tutto quello che serve per vedere il body, questo tag non è visibile nella pagina-->
 
 <body>
-    <h1 title="contenuto del suggerimento(tooltip)" draggable="true">Questo è il titolo della pagina</h1>
-    <p onclick="alert('sono stato cliccato')" style="color:#ff241f">Cliccami</p>
+    <h1 title="contenuto del suggerimento(tooltip)" draggable="true">Questo è il titolo della pagina</h1> <!--draggable indica se
+         l'elemento può essere trascinato-->
+         <!--il title è attributo con funzione di screen reader, quando si passa sopra con il cursore dà il suggerimento-->
+    <p onclick="alert('sono stato cliccato')" style="color:#ff241f">Cliccami</p> <!--p è elemento di blocco, finito va a capo-->
 
-    <div>
+    <div> <!--div è elemento di blocco e ospita altri-->
     <p>sono il secondo paragrafo</p>
     <h2>sono un tiolo alternativo</h2>
     </div>

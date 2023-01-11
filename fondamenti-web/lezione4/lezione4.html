@@ -12,8 +12,12 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/89zey3EB5H4" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
+    <!--iframe= buco all'interno del sito dove quello spazio viene gestito da qualcuno, tipo video di youtube, e dà autorizzazione
+        inietta il link; ideale quando il server è piccolo perchè non carica: il video viene gestito ad esempio da youtube e quindi 
+        bisogna dichiararlo nei cookie all'interno della cookie policy-->
+    <!--object è più specifico per alcuni formati-->
 
-    <h1>Form</h1>
+    <h1>Form</h1> <!--ReCAPTCHA→ elemento di difesa dai BOT; lavora tramite IA per evitare attacchi di DOS-->
     <form action="inviaDati.php" method="GET" name="contatti">
         <h2>contatta l'azienda</h2>
         <fieldset>
