@@ -1,0 +1,65 @@
+/* la pagina css solitamente si chiama style.css*/
+/*lultima regola nel css è quella che vince quando sono regole dello stesso livello*/
+/*questo è un commento*/
+
+
+div{
+    margin: 10px; /*le unità di misura più usate sono px e em(relativa alla dimensione del font perchè prende quella misura, 
+    2em ad esempio raddoppia la dimensione in base a quella del font*/
+}
+h2{
+    font-size: 22px;
+    color: red;
+}
+h3 {
+    text-decoration: underline;
+    color:orange;
+}
+section {
+    font-size: 20px; /* ereditarietà dei discendenti quindi span all'interno prende il font della section*/    
+}
+span {
+    color: grey;
+}
+a.menu, div.primopiano, h3{
+    color: orange;
+}
+ul #menu a {
+    color: black; 
+}
+a#home{
+    font-size: 1.5em;
+    color: blueviolet;
+}
+a {
+    color: gray;
+}
+/* a.menu= il punto identifica la classe dell'ancor a
+a#home = il cancelletto identifica l'id dell'ancor a
+
+
+ 
+/*mobile first*/
+@media screen and(min-width:576px) {
+    /* tablet più smartphone grandi*/
+    h2 {
+        color:aqua;
+    }
+}
+@media screen and(min-width:768px) {
+    /* tablet più notebook piccoli*/
+    h2 {
+        color:chartreuse;
+    }
+}
+@media screen and(min-width:992px) {
+    /* notebook più desktop*/
+    h2 {
+        color: deeppink;
+    }
+    h3 {
+        text-decoration: none;
+    }
+}
+
+

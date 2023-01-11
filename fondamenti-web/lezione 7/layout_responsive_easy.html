@@ -1,0 +1,42 @@
+<!--
+1)creare un layout semplice:
+un div di dimensione (width, height) 300px * 300px
+definire delle regole per cui:
+nel mobile da 576 il div rimane 300px * 300px di colore azzurro
+da 768 il div diventa 450 * 450 colore pink
+da 992 il div diventa 600*600 colore orange
+da 1200 750 * 750 colore green
+
+2)aggiungere prima del div un article con titolo e contenuto (h3,p)
+inserire dentro l'article un link di approfondimento di colore green
+
+3)aggiungere in fondo un footer
+inserire dentro al footer un link (a) con indicato 'sviluppato da Sara' di colore grigio
+
+4)verificare che colore del link dell'articolo non sia stato modificato
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Esercizio</title>
+    <link rel="stylesheet" href="./layout_responsive_easy.css">
+</head>
+<body>
+
+    <article>
+        <header><h3>Titolo dell'articolo</h3></header>
+        <p>testo di approfondimento dell'articolo</p>
+        <a href="https://www.google.it" class="article">Google</a>
+    </article>
+    <footer>
+        <small>Sviluppato da <a href="Sara"></a>Sara</small>
+    </footer>
+    <div>Questo è il div dell'esercizio sul CSS</div>
+    <h2>ciao</h2>
+    
+</body>
+</html>
