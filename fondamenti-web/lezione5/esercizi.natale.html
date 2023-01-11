@@ -24,11 +24,12 @@
     <hr>
     <section>
         <h2 id="tabella">Sezione 1: Tabella</h2>
-        <table style="width: 100%;">
+        <table style="width: 100%;" border="1">
 
             <h3>
                 <caption>La tabella nutrizionale</caption>
             </h3>
+            
             <thead style="background-color: orangered;">
                 <tr>
                     <th>Valori medi</th>
@@ -49,31 +50,26 @@
 
                 </tr>
 
-            </tbody>
-            <tbody>
                 <tr>
                     <td>Grassi <br> di cui acidi saturi</td>
                     <td>18g <br> 8,8g</td>
                     <td>1,6g <br> 0,8g</td>
                     <td rowspan="3">Sezione 1</td>
                 </tr>
-            </tbody>
-            <tbody>
+           
                 <tr>
                     <td>Carboidrati <br> di cui zuccheri</td>
                     <td>70g <br> 23,5g</td>
                     <td>6,1g <br> 2,0g</td>
                 </tr>
-            </tbody>
-            <tbody>
+            
                 <tr>
                     <td>Proteine</td>
                     <td>7g</td>
                     <td>6,6g</td>
                     <td rowspan="2">Sezione 2</td>
                 </tr>
-            </tbody>
-            <tbody>
+            
                 <tr>
                     <td>Sale</td>
                     <td>0,270g</td>
@@ -104,10 +100,10 @@
                 <legend>Dati Anagrafici</legend>
     
                 <label for="cognome">Cognome</label>
-                <input type="text" name="nominativo" id="cognome" autocomplete="off" > 
+                <input type="text" name="nominativo" id="cognome" autocomplete="off" placeholder="Cognome"> 
                
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" autocomplete="off" > 
+                <input type="text" name="nome" id="nome" autocomplete="off" placeholder="Nome" > 
                 
             </fieldset>
     
@@ -146,7 +142,7 @@
                 <legend>Dati di contatto</legend>
     
                 <label for="mail">E-mail</label>
-                <input type="text" name="mail" id="mail" placeholder="mail">
+                <input type="text" name="mail_1" id="mail">
 
                 <label for="tel">Telefono</label>
                 <input type="tel" name="tel" id="tel">
@@ -156,13 +152,13 @@
                 <legend>Dati di accesso</legend>
     
                 <label for="mail">E-mail</label>
-                <input type="text" name="mail" id="mail" placeholder="mail">
+                <input type="text" name="mail_2" id="mail">
 
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password">
 
                 <label for="password">Conferma Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="conferma_password" id="password">
             </fieldset>
 
             <fieldset>
@@ -200,6 +196,7 @@
             <label for="commento">Commento</label>
             <textarea name="commento" id="commento" cols="50" rows="5"></textarea>
             </fieldset>
+            <button type="submit">Invia</button>
     </section>
     <hr>
     <section>
