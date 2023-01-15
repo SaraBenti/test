@@ -2,10 +2,8 @@
 	//confronto i numeri
 	Se numero1>numero 2
 	Allora 
-        //restituisco il risultato
 		Risultato= numero1
 	altrimenti
-        restituisco il risultato
 		risultato= numero2
 	fine se
 	//restituisco il risultato
@@ -14,7 +12,7 @@ fine
 
 2)	Funzione moltiplica (numero1,numero2)
 	//moltiplico i numeri
-	Numero1*numero2
+	risultato = Numero1*numero2
 	//restituisco il risultato
 	Restituisci il risultato
 Fine
@@ -36,17 +34,14 @@ Fine
 4)	Funzione esamina (numero1)
 //esamino il numero
 Se numero1< 4
-    allora
-    //restituisco il risultato
+    allora    
     risultato = numero piccolo
     altrimenti
     //verifico se è <di 10
         se numero <10
             allora
-            //restituisco il risultato
             risultato = numero medio
             altrimenti
-            //restituisco il risultato
             risultato = numero grande
         fine se
 fine se
@@ -60,8 +55,6 @@ Se simbolo = *
     allora
         //elaboro la funzione
          risultato = numero1*numero2
-        //restituisco il risultato
-        restituisci il risultato
     altrimenti
     //esamino l'argomento
         se simbolo = /
@@ -71,17 +64,15 @@ Se simbolo = *
                     allora
                         //elaboro la funzione
                         risultato = numero1/numero2
-                        //restituisco il risultato
-                        restituisci il risultato
                     altrimenti
-                        //restituisco il risultato
                         risultato = impossibile dividere per 0
                 fine se
             altrimenti
-                //restituisco il risultato
                 risultato = operazione non riconosciuta
         fine se
 fine se 
+//restituisco il risultato
+restituisci il risultato
 fine
 
 6)Funzione minimo ()
@@ -98,12 +89,12 @@ fine
 oggi=giorno_odierno
 Se parola = giorno_odierno
     allora
-        //restituisco il risultato
         risultato = giusto
     altrimenti
-        //restituisco il risultato
         risultato = sbagliato
 fine se
+//restituisco il Risultato
+restituisci il risultato
 fine
 
 8)funzione valuta ()
