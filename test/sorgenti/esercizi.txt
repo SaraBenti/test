@@ -95,7 +95,6 @@ fine
 fine
 
 7)Funzione controlla (parola)
-
 oggi=giorno_odierno
 Se parola = giorno_odierno
     allora
