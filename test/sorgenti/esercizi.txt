@@ -1,0 +1,123 @@
+1)	Funzione confronta (numero1, numero2)
+	//confronto i numeri
+	Se numero1>numero 2
+	Allora 
+        //restituisco il risultato
+		Risultato= numero1
+	altrimenti
+        restituisco il risultato
+		risultato= numero2
+	fine se
+	//restituisco il risultato
+	Restituisci il risultato
+fine
+
+2)	Funzione moltiplica (numero1,numero2)
+	//moltiplico i numeri
+	Numero1*numero2
+	//restituisco il risultato
+	Restituisci il risultato
+Fine
+
+3)	Funzione elabora (numero_a, numero_b, numero_c)
+//confonto i numeri a e b
+Se numero_a>numero_b
+Allora
+	//elaboro la funzione
+	Risultato=(numero_a+numero_b)*numero_c
+Altrimenti
+	//elaboro la funzione
+	Risultato =( numero_a+numero_b)/numero_c
+Fine se
+//restituisco il risultato
+Restituisci il risultato
+Fine
+
+4)	Funzione esamina (numero1)
+//esamino il numero
+Se numero1< 4
+    allora
+    //restituisco il risultato
+    risultato = numero piccolo
+    altrimenti
+    //verifico se è <di 10
+        se numero <10
+            allora
+            //restituisco il risultato
+            risultato = numero medio
+            altrimenti
+            //restituisco il risultato
+            risultato = numero grande
+        fine se
+fine se
+//restituisco il risultato
+restituisci il risultato
+fine
+
+5)Funzione calcola (numero1, numero2, simbolo)
+//esamino l'argomento
+Se simbolo = *
+    allora
+        //elaboro la funzione
+         risultato = numero1*numero2
+        //restituisco il risultato
+        restituisci il risultato
+    altrimenti
+    //esamino l'argomento
+        se simbolo = /
+            allora
+                //verifico se numero2 != 0
+                se numero2 != 0
+                    allora
+                        //elaboro la funzione
+                        risultato = numero1/numero2
+                        //restituisco il risultato
+                        restituisci il risultato
+                    altrimenti
+                        //restituisco il risultato
+                        risultato = impossibile dividere per 0
+                fine se
+            altrimenti
+                //restituisco il risultato
+                risultato = operazione non riconosciuta
+        fine se
+fine se 
+fine
+
+6)Funzione minimo ()
+    i=1
+    //leggo i valori e popolo l'array elementi
+    per 10 volte
+        leggi elementi (i)
+        //restituisco il minimo tra gli elementi
+        restituisci il minimo
+    fine per
+fine
+
+7)Funzione controlla (parola)
+
+oggi=giorno_odierno
+Se parola = giorno_odierno
+    allora
+        //restituisco il risultato
+        risultato = giusto
+    altrimenti
+        //restituisco il risultato
+        risultato = sbagliato
+fine se
+fine
+
+8)funzione valuta ()
+    i=1
+    per 10 volte    
+        se valori(i)/10>=6
+            allora
+            //restituisco il risultato
+            risultato= sufficiente
+            altrimenti
+            //restituisco il risultato
+            risultato =insufficiente
+        fine se
+    fine per 
+fine
+
