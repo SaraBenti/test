@@ -75,14 +75,15 @@ fine se
 restituisci il risultato
 fine
 
-6)Funzione minimo ()
-    i=1
-    //leggo i valori e popolo l'array elementi
-    per 10 volte
-        leggi elementi (i)
-        //restituisco il minimo tra gli elementi
-        restituisci il minimo
-    fine per
+6)Funzione minimo (valori)
+   //inizializzo il risultato al primo elemento dell'array
+   risultato = valori[1]→in realtà bisogna partire da 0
+   //scorro gli elementi rimanenti dell'array e verifico se sono più piccoli del risultato attuale
+   //tramite il ciclo for
+   Per i che va da 2 a 10
+    se valori[i]<risultato
+        allora  
+            //se il valore corrente è più piccolo
 fine
 
 7)Funzione controlla (parola)
