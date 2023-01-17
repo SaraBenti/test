@@ -84,6 +84,11 @@ fine
     se valori[i]<risultato
         allora  
             //se il valore corrente è più piccolo
+            risultato=valori[i]
+    fine se
+    fine per
+    //restituisco il risultato
+    restituisci il risultato
 fine
 
 7)Funzione controlla (parola)
@@ -99,16 +104,5 @@ restituisci il risultato
 fine
 
 8)funzione valuta ()
-    i=1
-    per 10 volte    
-        se valori(i)/10>=6
-            allora
-            //restituisco il risultato
-            risultato= sufficiente
-            altrimenti
-            //restituisco il risultato
-            risultato =insufficiente
-        fine se
-    fine per 
-fine
+    Se
 
