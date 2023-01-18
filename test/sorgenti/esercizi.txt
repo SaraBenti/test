@@ -105,10 +105,109 @@ fine
 
 8)funzione valuta () // scomporre il problema dividendo in due parti, una funzione che calcola la media e l'altra che stampa la valutazione
 //inserire una funzione dentro una funzione permette di avere meno variabili e meno codice
-9)non posso fare un ciclo for nel leggi fino a zero perchè non so quando arriva lo 0 ►iclo con guardia (ripeti)
+Funzione (valuta)
+    //calcolo la media
+    media= Media(valori)
+    //stampo la valutazione
+    valutazione_media(media(valori))
+fine
+//restituisco la media dei valori dell'array
+Funzione (media(valori))
+    //inizializzo le variabili
+    elementi=0
+    totale=0
+    per i che va da 1 a numero_elementi_array
+        //calcolo il totale degli elementi dell'array e il numero degli elementi
+        totale+=valori(i)
+        elementi=elementi++
+    fine per
+    risultato =totale/elementi
+    //restituisco il risultato
+    restituisci il risultato
+fine
+//verifico se suff o insuff
+Funzione (verifica_media(media))
+    //verifico se il voto minore di 6
+    se media<6
+        allora
+        //restituisco il risultato
+            stampa "insufficiente"
+        altrimenti
+        //restituisco il risultato
+            stampa "sufficiente"
+    fine se
+fine        
+
+
+
+
+
+9)non posso fare un ciclo for nel leggi fino a zero perchè non so quando arriva lo 0 ►ciclo con guardia (ripeti)
 //terminatore=0
 //<>=diverso
+
+Funzione leggi_numeri()
+    //inizializzo le variabili
+    array=leggi_fino_zero
+    risultato=somma(array)
+fine
+
+//leggo i valori inseriti dall'utente finchè non scrive 0
+Funzione leggi_fino_zero
+    ripeti
+        //leggo un valore
+        se valore <>0
+            //aggiungo il valore all'array
+            risultato=aggiungi(risultato,valore)
+        fine se
+    //verifico il valore inserito dall'utente
+    finchè valore<>0
+    //restituisco il risultato
+    restituisci il risultato
+fine
+
+//sommo i valori dell'array
+funzione somma(array)
+    //inizializzo la variabile risultato
+    risultato=0
+    per i che va da 1 a numero_elementi_array
+        //sommo al risultato il valore corrente
+        risultato+=array(i)
+    fine per
+    //restituisco il risultato
+    restituisci il risultato
+fine
+
 10)target è il nome della variabile
+Funzione tentativi(target)
+    ripeti
+        //leggo il valore inserito dall'utente
+        numero= leggi(i)
+        //verifico se il valore è quello atteso
+        verifica (numero,target)
+    finchè numero<>target
+fine
+
+funzione verifica (numero,target)
+    //verifico se il numero è uguale al target
+    se numero=target
+        allora
+            //restituisco "trovato"
+             stampa "trovato"
+        altrimenti  
+            //verifico se il numero è minore del target
+            se numero<target
+                allora
+                    //restituisco il risultato "minore"
+                    stampa "minore"
+                altrimenti
+                    //restituisco il risultato "maggiore"
+                    stampa "maggiore"
+            fine se
+    fine se
+fine        
+
+
 
     
 
