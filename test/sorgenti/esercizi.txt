@@ -103,6 +103,12 @@ fine se
 restituisci il risultato
 fine
 
-8)funzione valuta ()
-    Se
+8)funzione valuta () // scomporre il problema dividendo in due parti, una funzione che calcola la media e l'altra che stampa la valutazione
+//inserire una funzione dentro una funzione permette di avere meno variabili e meno codice
+9)non posso fare un ciclo for nel leggi fino a zero perchè non so quando arriva lo 0 ►iclo con guardia (ripeti)
+//terminatore=0
+//<>=diverso
+10)target è il nome della variabile
+
+    
 
