@@ -11,7 +11,7 @@ div {
     height: 300px;
     background-color: aqua;
 }
-@media screen and (min-width:576px) {
+@media screen and (min-width:576px) { 
     h2{
         color:aqua;
     }

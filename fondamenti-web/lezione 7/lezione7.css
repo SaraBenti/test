@@ -36,9 +36,10 @@ a {
 }
 /* a.menu= il punto identifica la classe dell'ancor a
 a#home = il cancelletto identifica l'id dell'ancor a
+/*display inline→li mette sulla stessa riga*/
 
 
- 
+ /*media query*/
 /*mobile first*/
 @media screen and(min-width:576px) {
     /* tablet più smartphone grandi*/
@@ -61,5 +62,4 @@ a#home = il cancelletto identifica l'id dell'ancor a
         text-decoration: none;
     }
 }
-
 

@@ -1,0 +1,50 @@
+/*box model
+ - padding
+ - border
+ - margin*/
+ *{
+    font-size: 0px;
+ }
+ h1{
+    margin: 0 auto; /*centra il contenitore*/
+    width: 40%;
+    text-align: center;/* se metto questo è inutile mettere width e margin*/
+    margin-bottom: 20px;
+ }
+ section#news{
+    width: 80%;
+    border: 2px solid green;
+   /*margin-top: 2em;*/
+    padding: 10px;
+    margin: 0 auto; 
+ }
+ #news  div{
+    display: inline-block;
+    width: 33%; 
+    border: 2px solid grey;
+    min-height: 50px; /* se mettessi solo height il testo andrebbe fuori*/
+    box-sizing: border-box;/* la dimensione è data da contenuto padding e bordo*/
+    font-size: 14px;
+   
+ }
+ #news > div >div{
+
+    font-size: 14px;
+ }
+ #cb{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    padding: 15px;
+    border: 1px solid black;
+    box-sizing: content-box;
+ }/* con border box l'area di tutto il contenuto non comprende padding e border*/
+ #bb{
+    width: 150px;
+    height: 150px;
+    background-color: deeppink;
+    padding: 15px;
+    border: 1px solid black;
+    box-sizing: border-box;
+ } /* con border box l'area di tutto il contenuto comprende padding e border*/
+ /* il border box è utilizzato in responsive*/

@@ -1,5 +1,6 @@
 /*desktop first*/
 /* ribaltiamo la logica partendo dalla misura più grande e diminuendo la misura nelle regole*/
+/*perchè l'ultima regola che scrivo vince*/
 h2 {
     color: deeppink;
     font-size: 22px;   

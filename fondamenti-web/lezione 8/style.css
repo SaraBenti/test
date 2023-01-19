@@ -1,0 +1,124 @@
+h1 {
+    color: lightseagreen;
+}
+section#primopiano > div { /*il maggiore indica che deve essere figlio diretto della section*/
+    border: 1px solid grey;
+    margin: 6px;
+}
+section#primopiano > div div ~ div { /*con il maggiore selezioniamo i figli diretti*/
+    /* con ~ i fratelli successori*/
+    /* ~ → alt 126*/
+    color: blueviolet;
+}
+p ~ p {
+    background-color: aquamarine;
+}
+p + p { /* fratelli adiacenti con il +*/
+    background-color: coral;
+}
+p ~ span {
+    background-color: lightseagreen;
+}
+/*selettori di attributo*/
+#dati-anagrafici input[type="email"] { /*non fare spazio prima di parentesi quadra*/
+    border: 2px dashed lightgreen; /*dashed è il tratteggio*/
+}
+#dati-anagrafici label[data-enaip="colora"] {
+    color: lightseagreen;
+}
+/* pseudo-classi*/
+section#pseudo-classi > div {
+    width: 300px;
+    height: 300px;
+    border: 2px solid green;
+}
+section#pseudo-classi > div:hover{ 
+    background-color: aquamarine;
+}
+section#pseudo-classi a:link{
+    color: purple;
+}
+section#pseudo-classi a:hover{
+    color: deeppink;
+}
+section#pseudo-classi a:active{
+    color: pink;
+}
+section#pseudo-classi a:visited{
+    color: cornflowerblue;
+}
+ul#menu li{
+    display: inline;
+}
+ul#menu li:first-child{
+    font-size: large;
+}
+/* :root richiama tutto l'html*/
+/* nth-child serve per colorare determinati figli*/
+/*pseudo classi strutturali*/
+section#pseudo-classi-strutturali span:nth-child(1),
+section#pseudo-classi-strutturali span:nth-child(5),
+section#pseudo-classi-strutturali span:nth-child(8){
+    background-color: darkmagenta;
+    color: white;
+}
+section#pseudo-classi-strutturali span:nth-child(even){
+    background-color: darkblue;
+    color: white;
+}
+/* se metto nth-child (3n+1)significa che coloro ogni 3 partendo da 1
+3n è lo step di incremento
+1 è lo start */
+section#pseudo-classi-strutturali span:nth-last-child(2){
+    background-color: magenta;
+    color: white;
+}/* colora il nono di magenta perchè conta al contrario*/
+
+/*section#pseudo-classi-strutturali span:last-child{
+    background-color: magenta;
+    color: white;
+} questo colora l'ultimo figlio*/
+
+.titoli3 h3:empty{
+    border: 1px double red;
+    padding: 10px;
+}
+/*.evidenza{
+    background-color: firebrick;
+    border-radius: 3px;
+    padding: 5px;
+}*/
+/*span:not(.evidenza){
+    background-color: deeppink;
+    color: white;
+    padding: 5px
+} in questo caso tutti gli span tranne quelli con classe evidenza*/
+
+input:enabled{
+    border: 2px solid blue;
+}
+input:disabled{
+    border: 2px solid darkgreen;
+} /* se non volessi far vedere i campi disabled
+display: none; */
+/* input:disabled + label{
+    display: none;
+}*/
+input:checked{
+    margin-left: 15px;
+    accent-color: red;
+}
+/*la checkbox ha le sue regole*/
+/* psudo-elementi */
+#editoriale p::first-letter{
+    font-size: 5em;
+}
+#editoriale p::first-line{
+    color: goldenrod;
+}
+input:checked::after{
+    content: "(selezionato)";
+}/* fa apparire un elemento quando selezioni gli hobbies */
+
+
+
