@@ -31,6 +31,9 @@ Fine se
 Restituisci il risultato
 Fine
 
+
+
+
 4)	Funzione esamina (numero1)
 //esamino il numero
 Se numero1< 4
@@ -205,9 +208,60 @@ funzione verifica (numero,target)
                     stampa "maggiore"
             fine se
     fine se
-fine        
+fine   
+
+-----------
+
+Funzione elabora(numero1, numero2)
+//verifico i segni di  numero1 e numero2
+    Se numero1*numero2>0
+        allora
+            //elaboro la funzione
+            risultato = numero1 + numero2
+        altrimenti
+            //elaboro la funzione
+            risultato = numero1*numero2
+    fine se
+fine funzione
+//stampo il risultato della funzione elabora
+stampa risultato
+
+
+Funzione stampa (risultato)
+    //stampo il risultato della funzione elabora
+    stampa risultato
+fine funzione
+------
+Funzione verifica (numero)
+//verifico il numero ricevuto
+    Se numero<=0
+        allora
+            //restituisco "impossibile procedere"
+            stampa "impossibile procedere"
+        altrimenti
+            //verifico se il numero è pari o dispari
+            se numero%2==0
+                allora
+                    //restituisco "il numero è pari"
+                    risultato= "il numero è pari"
+                altrimenti
+                    //restituisco "il numero è dispari"
+                    risultato= "il numero è dispari"
+            fine se
+    fine se
+fine funzione
+
+stampa2 = risultato
+Funzione stampa2 (risultato)
+    ripeti
+        //stampo il risultato della funzione verifica n_volte
+        stampa2 risultato
+    finchè
+        n_volte=numero
+fine
 
 
 
-    
+
+   
 
