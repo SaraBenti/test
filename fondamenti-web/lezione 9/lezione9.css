@@ -1,0 +1,70 @@
+/*body {
+    margin: 0;
+}*/ /* posso non metterlo se metto il reset css*/
+/*flexbox si controlla dal padre*/
+section#articoli{
+    display: flex; /*il default è il row*/
+    flex-direction: column;
+}
+section#articoli > div {
+    width: 33%;
+    height: 80px;
+    border-width: 5px ;
+    border-style: solid ;
+    border-top-color: red;
+    border-bottom-color: cadetblue;
+    margin: 10px 15px 20px 25px;
+    overflow: auto; /* quando il testo supera la misura del contenitore utilizziamo hidden */
+    border-top-left-radius: 15px; /* arrotonda i bordi*/
+    border-bottom-right-radius: 30px;
+    background-color: cadetblue;
+    color: white;
+}
+
+    input{
+        outline-color:red;
+    }
+img{
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.452); /*0.452 è la trasparenza*/
+    padding: 5px;
+}
+input#calcio[type="radio"]{
+    accent-color: green;
+}
+
+input#volley[type="radio"]{ /* parentesi quadre identificano l'attributo */
+    accent-color: rgb(128, 62, 0);
+}
+/*non si usa ogni pallino colorato diverso, quindi 
+input[type="radio"]{
+    accent-color:blu;
+} */
+
+section#mission {
+    height: 200px;
+    background-image: url(./gatto.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    /*background-attachment: fixed;*/
+    /*background-position: 20px 20px;*/
+    background-size: contain; /* la fa vedere tutta e la ridimensiona*/
+}   
+section#mission h2{
+        color: red;
+        padding: 80px;
+        font-size: 32px;
+    }
+section#riferimenti{
+    margin: 2em auto;
+}
+section#riferimenti div{
+    border: 1px solid black;
+    padding: 1em;
+    display: inline-block; /* solo inline essendo elemento di blocco non posso dare misure, mentre inline-block si*/
+    width: 200px;
+}
+/*display none toglie la visualizzazione*/
+/* form{display:none;
+} */
+/* visibility hidden crea l'invisibilità come display none ma lascia l'ingombro nella pagina*/
