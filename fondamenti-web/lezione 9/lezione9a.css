@@ -80,6 +80,9 @@ section#azienda {
     padding: 20px 0;
     color: aliceblue;
 }
+a [data-company=true]{
+    background-color: beige;
+}
 
 @media screen and (min-width:576px) {
     nav#menu ul {

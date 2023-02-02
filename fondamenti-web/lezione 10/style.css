@@ -1,0 +1,185 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+#riferimenti{
+    border-bottom: 1px solid #999999;
+    overflow: auto;
+    padding: 5px 1em;
+    font-size: 9px;
+}
+#rif-tel{
+    float: left;
+}
+/*  il float estrae l'elemento dalla sua posizione*/
+#rif-wha{
+    float: right; /* il flex è più nuovo rispetto al float, si può scegliere quale usare*/
+   /* clear: both; non vuole elemento float nè a dx nè a sx; clear left nessun elemento a sinistra*/
+}
+#menu-principale{
+    text-align: center;
+    padding: 5px;
+    background-color: #0097a7;
+    color: white;
+    position: sticky; /* per rendere la barra manu bloccata anche quando scrollo*/
+    top: 0;/* lo sticki deve sapere dove fermarsi*/
+    z-index: 10;/* da mettere perchè abbiamo degli altri z-index*/
+    box-shadow: 0px 1px 3px black; /* x y sfumatura e colore*/
+}
+.text-center{
+    text-align: center;
+}
+.text-shadow{
+   text-shadow: 3px 3px 2px #333333; /* per fare l'ombra*/
+}
+#position{
+    height: 300px;
+    position: relative;
+    display: none;/* faccio sparire il div position*/
+}
+#position, #pos-rel, #pos-abs{
+    border: 1px solid black;
+}
+#position div:nth-child(1){
+    background-color: #ffa000;
+}
+#position div:nth-child(2){
+    background-color: #558b2f;
+}
+#position div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /*position: static; /* posizione di default che mette un elemento di fianco all'altro*/
+}
+#pos-rel{
+    position: relative;/* la posizione rispetto al margine non occupa lo spazio libero e cambiando il margine cambio anche gli elementi intorno*/ 
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+#pos-abs{
+    position: absolute;/* prende di riferimento non la sua posizione naturale ma il suo padre che arriva al body se 
+    non ci sono riferimenti (in position abbiamo messo relative e prende riferimento da quello, 
+    se non l'avessimo fatto al body*/
+    top: 30px;
+    /*right:  0;/* andrà alla fine del padre, tutto a destra */
+    left: 30px;
+    z-index: 1;/* prevalenza di livello, più il numero è alto più viene davanti, vince il pos-rel qui sopra*/
+}
+#motto{
+    min-height: 300px;
+    background-image: url(./sfondo.jpg);
+    background-position: center;
+    background-size: cover; /* cover ricopre lo spazio della section in questo caso*/
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+#motto h2{
+    color: white;
+    padding: 100px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;/* mette tutte le lettere in maiuscolo*/
+}
+.pellicola{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.container{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+#gallery >div, #gallery1>div{
+    background-image: url(./sfondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 80px;
+    border: 1px solid black;
+    margin: 2px;
+
+}
+#chat{
+    position: fixed; 
+    right: 2em;
+    bottom: 3em;
+    color: lightgreen;
+    background-color: white;
+    border-radius: 20%;
+    padding: 10px;
+    cursor: pointer; /* appare la manina quando vado con il cursore sulla chat wha*/
+}
+table,tr,  td {
+    border: 1px solid black !important; /* perchè c'è il reset*/
+    border-collapse: collapse !important;/* mette il bordo di una sola riga*/
+}
+.mt-10{
+    margin-top: 10px;
+}
+#servizi>div{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; non lo prende e quindi facciamo align*/
+    align-items: center;
+}
+#gallery div:hover,#gallery1 div:hover{
+animation-name: opacizza;
+animation-duration: 3s;
+}
+@keyframes opacizza{
+    from{opacity: 1;}
+    100%{opacity: 0.5;}
+}
+@media screen and (min-width:576px) {
+    #motto h2{
+        text-decoration: overline;
+    }
+    #servizi{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;/* allineamento orizzntale del flex*/
+    }
+    #servizi>div{
+        max-width: 30%;
+    }
+    #servizi>div p{
+        text-align: justify; /* testo giustificato*/
+        margin: 8px 0px;
+    }
+    #gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;/*quando non ci stai vai a capo*/
+        justify-content: space-evenly;
+
+    }
+    #gallery div{
+        width: 48%;
+    }
+    #gallery1{
+        display: grid;/* divisione in griglia con 3 colonne*/
+        grid-template-columns: 33% 33% 33%;
+    }
+    #gallery1 div:nth-child(1){
+        grid-column: span 2;/*occupate due colonne*/
+    }
+    #gallery1 div:nth-child(2), #gallery1 div:nth-child(3) {
+        grid-row: span 2;/* occupate 2 righe*/
+    }
+    #gallery1 div:nth-child(7){
+        grid-column: span 3;
+    }
+    #news-primopiano p{
+        column-count: 4; /*column-width: 200px; → sarebbe stato lo stesso risultato*/
+        column-rule: 1px solid black;
+        text-align: justify;
+    }
+    
+
+}
