@@ -34,7 +34,7 @@
 #position{
     height: 300px;
     position: relative;
-    display: none;/* faccio sparire il div position*/
+   display: none;/* faccio sparire il div position*/
 }
 #position, #pos-rel, #pos-abs{
     border: 1px solid black;
