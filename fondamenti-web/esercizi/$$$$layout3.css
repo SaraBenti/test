@@ -1,0 +1,35 @@
+* {
+    font-family: 'Roboto', sans-serif;   
+}
+
+section#logo{
+    height: 50px;
+    width: 50px;
+    padding: 1em;
+    }
+
+    section#logo>img{
+        max-height: 50px;
+        margin-left: 350px;
+    }
+nav#menu{
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+nav#menu ul{
+    display: flex;
+    flex-direction: row;
+}
+nav#menu ul li{
+    padding: 5px;
+}
+nav#menu a{
+    color: white;
+}
+#mission{
+    display: flex;
+    flex-direction: row;
+}

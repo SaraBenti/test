@@ -1,0 +1,145 @@
+
+div#logo{
+    background-image: url(./logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 40px;
+    margin: 5px;
+}
+nav#menu{
+    background-color: #502455;;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    
+}
+nav#menu ul{
+    display: flex;
+    flex-direction: column;
+}
+nav#menu ul li{
+    padding: 5px;
+}
+nav#menu a{
+    color: white;
+}
+section#servizi {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2em;
+ 
+
+}
+section#servizi div{
+    margin: 1em;
+}
+section#servizi div.icona{
+    align-items: center;
+}
+
+section#motto{
+    height: 200px;
+    background-image: url(./sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+section div.pellicola{
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.636);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    
+}
+
+section#motto h2{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    color: black;
+    padding: 100px;
+    z-index: 1;
+}
+section#news{
+    padding: 1em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   
+}
+article.uno{
+   padding: 10px;
+}
+article.due{
+    padding: 10px;
+ }
+ #gallery{
+    column-count: 2;
+    width: 100%;
+    
+ }
+#gallery>div {
+    background-image: url(./sfondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 150px;
+    min-width: 150px;   
+    margin: 4px;
+   border-radius: 3px;
+
+}
+footer{
+    background-color: #333;
+    color: white;
+    height: 3em;   
+}
+small#footer{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   padding: 1em;
+}
+
+
+ 
+@media screen and (min-width:576px) {
+    nav#menu ul{
+        flex-direction: row;
+    }
+    section#servizi{
+        width: 80%;
+        flex-direction: row;
+        margin: 3em;
+        justify-content: space-between;  
+    }
+    section#news{
+        width: 80%;
+        flex-direction: row;
+       
+    }
+    article.uno{
+        width: 70%;
+        column-count: 2;
+    }
+    article.due{
+        width: 30%;
+        column-count: 1;
+    }
+    #gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    
+}
