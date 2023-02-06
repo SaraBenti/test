@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+    <h1>Hello, world!</h1>
+    <section id="notizie" class="container-md "> <!--container ha le media query inserite; container-fluid non è variabole come container-->
+    <div class="row">  <!--devo sempre mettere un div con la riga-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">News 1 </div><!--se togliessi lg 3 ragionerebbe fino all'ultimo break point impostato che è md-4-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">news 2</div> <!--col-12=tutta la riga, col-6=2 colonne...-->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">news 3</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">news 4</div>
+    </div> 
+    </section>
+    <section id="primo-piano" class="container mb-3 mt-3"><!--.row{
+        margin: 16px 0;
+    }-->
+        <div class="row">
+            <div class="col-12 col-sm-6 bg-info border border-primary">col primo piano 1</div> <!--se ometto col-12  comunque 12-->
+            <div class="col-12 col-sm-6 bg-warning">col primo piano 2</div> <!--col-auto sfrutta lo spazio che serve al contenuto reale-->
+            <div class="col-12 col-sm-6 bg-success">col primo piano 3</div>
+        </div>
+
+    </section>
+    <section id="width-bootstrap">
+        <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+        <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div> <!--in questo caso è meglio fare un css #width-bootstrap div con background color-->
+        <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+        <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+        <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+    </section>
+    <section id="width" class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 shadow-sm rounded my-2">2</div>
+        <div class="col-12 col-md-6 shadow-sm rounded my-2">3</div>
+        <div class="col-12 col-md-6 shadow-sm rounded my-2">1</div>
+        <div class="col-12 col-md-6 shadow-sm rounded my-2">4</div>
+    </div>
+    </section>
+    <section id="flexbox" class="d-flex flex-column flex-sm-row"> 
+        <div class="news w-25">1</div>
+        <div class="news w-25">2</div>
+        <div class="news w-25">3</div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

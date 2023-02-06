@@ -3,7 +3,7 @@
 }
 #riferimenti{
     border-bottom: 1px solid #999999;
-    overflow: auto;
+    overflow: auto; /*per il float bisogna dargli un ingombro*/
     padding: 5px 1em;
     font-size: 9px;
 }
@@ -128,7 +128,7 @@ table,tr,  td {
     /*justify-content: center; non lo prende e quindi facciamo align*/
     align-items: center;
 }
-#gallery div:hover,#gallery1 div:hover{
+#gallery div:hover,#gallery1 div:hover{/*hover quando passo sopra con il mouse*/
 animation-name: opacizza;
 animation-duration: 3s;
 }
@@ -156,7 +156,7 @@ animation-duration: 3s;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;/*quando non ci stai vai a capo*/
-        justify-content: space-evenly;
+        justify-content: space-evenly;/* allineati che quando sono dispari l'ultimo lo centra*/
 
     }
     #gallery div{
